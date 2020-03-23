@@ -25,7 +25,7 @@ SECRET_KEY = '($f4i@1cgqyth!0=71hv$$vnsa-yoa&5*!6q)f*%gb^c6wa@8d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
