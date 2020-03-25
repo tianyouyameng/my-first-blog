@@ -1,8 +1,8 @@
-from django.conf.urls import url
-from django.conf.urls import include
-from blog.views import post_list
-from views import post_list
-urlpatterns = [
-    url(r'^$', post_list, name='post_list'),
-]
+from django.urls import include,path
+from blog.views import post_list, post_detail
 
+
+urlpatterns = [
+    path('', post_list),
+    path('post/<int:id>/', post_detail),
+]
